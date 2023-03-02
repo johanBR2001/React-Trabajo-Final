@@ -110,9 +110,9 @@ function Finish() {
           </div>
         </div>
       </div>
-      <Link to='/proyectoFinal/Confirmacion'><button className="btn btn-outline-warning" type="primary">Registro de Pedido Terminado</button></Link>
+      <Link to='/proyectoFinal/BuscarPedido'><button className="btn btn-outline-warning" type="primary">Registro de Pedido Terminado</button></Link>
         <Routes>
-                    <Route path='/proyectoFinal/Confirmacion' element={<Confirmacion />} />
+                    <Route path='/proyectoFinal/Buscar' element={<Confirmacion />} />
                 </Routes>
         </div>
      

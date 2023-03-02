@@ -27,7 +27,7 @@
         id:5,
         tittle:'Embarcadero 41',
         category: 'Mariscos',
-        img: "https://tofuu.getjusto.com/orioneat-prod-resized/7at29vGyrTXCNPdyS-300-500.webp"
+        img: "  "
     },
     {
         id:6,

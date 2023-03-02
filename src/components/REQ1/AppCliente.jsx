@@ -7,7 +7,7 @@ function AppCliente() {
 
     const loginHttp = async function(usuario, password) {
         const response = await fetch(
-            "http://localhost:8000/prueba/loginCliente",
+            "https://california2023.azurewebsites.net/prueba/loginCliente",
             {
                 method : "POST",
                 body : JSON.stringify(
@@ -39,7 +39,7 @@ function AppCliente() {
             // Guardado en session storage
             sessionStorage.setItem("DATA_USUARIO", dataUsuarioJSON)
 
-            navigate("/proyectoFinal/lista#", {
+            navigate("/proyectoFinal/Lista_Restaurante", {
                 state : {
                     username : usuario
                 }

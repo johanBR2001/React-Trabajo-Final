@@ -1,7 +1,7 @@
 import React from 'react';
 import '../css/Rest.css';
 import Rest  from "./Rest";
-
+import { Link } from 'react-router-dom';
 
 
 
@@ -81,7 +81,11 @@ function Platos() {
                 precio = "Precio: S/.48"
              />
         </div>
+        <div>
+        <Link to='/proyectoFinal/Promociones'><button className="btn btn-outline-warning">Promociones</button></Link>
+        </div>
     </div>
+    
   );
 }
 

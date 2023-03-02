@@ -8,7 +8,7 @@ import {
 import AppCliente  from './components/REQ1/AppCliente';
 import Platos from '../src/components/REQ_5/Platos'
 import Confirmacion from '../src/components/REQ_16/Confirmacion'
-import Menu from './components/routing-examples/Menu';
+// import Menu from './components/routing-examples/Menu';
 import Platos2 from './components/REQ_4/Platos2'
 import Car from './components/REQ6/Car'
 import Checkout from './components/REQ7/Checkout';
@@ -17,7 +17,12 @@ import AppRestaurante from './components/REQ9/AppRestaurante'
 import Dishes from './components/REQ10/Dishes';
 import Realizado from './components/REQ13/Realizado';
 import Finish from './components/REQ15/Finish';
-import App1 from './components/Lista restaurant/App1'
+// import App1 from './components/Lista restaurant/App1'
+// import Promocion from "./components/sorpresa/Promocion";
+import Promociones from './components/sorpresa/Promociones';
+import Lista_Restaurante from './components/listas_Restaurante3/Lista_Restaurante';
+import Seguimiento from './components/Seguimiento/Seguimiento';
+import BuscarPedido from './components/Seguimiento/BuscarPedido';
 const app = () => {
   return (
     <Router>
@@ -36,7 +41,11 @@ const app = () => {
           <Route path='/proyectoFinal/Finish' element={<Finish />} />
           <Route path='/proyectoFinal/Confirmacion' element={<Confirmacion />} />
           <Route path='/proyectoFinal/AppCliente' element={<AppCliente />} />
-          <Route path= '/proyectoFinal/lista' element ={<App1/>}/>
+          {/* <Route path= '/proyectoFinal/lista/*' element ={<App1/>}/> */}
+          <Route path="/proyectoFinal/Promociones" element={<Promociones />} />
+          <Route path="/proyectoFinal/Lista_Restaurante" element={<Lista_Restaurante/>} />
+          <Route path="/proyectoFinal/Registro" element={<Seguimiento/>} />
+          <Route path="/proyectoFinal/BuscarPedido" element={<BuscarPedido/>} />
 
           
         </Routes>

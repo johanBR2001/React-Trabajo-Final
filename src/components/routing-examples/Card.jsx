@@ -11,7 +11,7 @@ import Platos2 from '../REQ_4/Platos2'
 
 function Card({title, imgSource}){
     return(
-        <div className="row gy-3">
+        <div className="menu-item bg-white shadow-on-hover">
                                 <img src={imgSource} alt=""/>
                                 <div className="menu-item-content p-4">
                                     <div>

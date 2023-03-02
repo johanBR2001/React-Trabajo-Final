@@ -7,7 +7,7 @@ function AppCliente() {
 
     const loginHttp = async function(usuario, password) {
         const response = await fetch(
-            "http://localhost:8000/prueba/loginCliente",
+            "https://california2023.azurewebsites.net/prueba/loginRestaurante",
             {
                 method : "POST",
                 body : JSON.stringify(
@@ -30,7 +30,7 @@ function AppCliente() {
         if (error === "") {
             // Login correcto
             const dataUsuario = {
-                username : usuario,
+                usuario : usuario,
                 password : password
             }
 
